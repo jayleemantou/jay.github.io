@@ -1,0 +1,136 @@
+baseURL: https://jayleemantou.github.io/
+languageCode: zh-cn
+title: "爱做梦的馒头"
+copyright: "© 馒头 2023"
+# paginate specifies the maximum number of posts displayed on the home page.
+paginate: 12
+googleAnalytics : G-FPM5S53JXJ
+# theme specifies the name of the theme to be used.
+theme: minima
+# language.xxx setup
+defaultContentLanguage : zh-cn
+languages:
+  zh-cn:
+    author:
+      status: 
+      description: 和一个叫乐乐的狗子流浪天涯的业余程序员
+    params:
+      greet: 馒头
+
+params:
+  # greet specifies greeting words.
+  greet: Hello :)
+  # subtitle speficies a subtitle displayed right after the site title.
+  subtitle:
+  # switch specifies two emojis used as the button toggling color themes.
+  switch: ["🌚", "🌝"]
+  # minima has one dark theme and multiple light themes. defaultTheme specifies
+  # a default light theme to use. currently available options: light, sand, rock, system.
+  defaultTheme: light
+  # displayDate speficies whether or not to display post date on the home page.
+  displayDate: true
+  # displayDescription specifies whether or not to display post description on
+  # the hoem page.
+  displayDescription: true
+  # selectable specifies if or not your post content can be selected.
+  selectable: true
+  globalFontFamily : "LXGW WenKai"
+  # social is an array containing as many as social accounts to be displayed
+  # in the buttom of every page.
+  social:
+    - name: "email"
+      url: "mailto:jayleemantou@gmail.com"
+    - name: "github"
+      url: "https://github.com/jayleemantou"
+
+  # math plugin
+  math:
+    enable: false
+    provider: katex
+
+  # diagram plugin
+  diagram:
+    enable: false
+    provider: mermaid
+
+  # comment plugin
+  comment:
+    enable: true
+    provider: giscus
+    # check out https://disqus.com/
+    disqus:
+      shortname: hugo-minima
+      # check out https://utteranc.es
+    utterances:
+      repo: mivinci/hugo-theme-minima
+      issueTerm: pathname
+      label: comment
+    # check out https://giscus.app
+    giscus: 
+      repo: jayleemantou/jayleemantou.github.io
+      repoId: MDEwOlJlcG9zaXRvcnkzNjUxMzE0MDc=
+      category: Announcements
+      categoryId: DIC_kwDOFcN2j84CbsyE
+      mapping: pathname
+      inputPosition: buttom # bottom | top
+      reactions: true
+      metadata: false
+
+  # search plugin
+  search:
+    enable: false
+    provider: fuse
+    title: Search
+    placeholder: Enter keywords
+    # check out https://fusejs.io
+    fuse:
+      keys:
+        - title
+        - permalink
+        - summary
+        - content
+      distance: 100
+      location: 0
+      threshold: 0.6
+      ignoreLocation: false
+      isCaseSensitive: false
+      includeScore: false
+      includeMatches: false
+      minMatchCharLength: 1
+      shouldSort: true
+      findAllMatches: false
+
+
+# menu.main is an array containing what is used as the navigator.
+menu:
+  main:
+    - identifier: /
+      name: 主页
+      weight: 1
+    - identifier: tags
+      name:  标签
+      weight: 2
+    - identifier: categories
+      name: 分类
+      weight: 3
+
+# taxonomies defines ways to classify yout posts. Below are some presets that
+# most bloggers use, so you can replace them with whatever you like.
+taxonomies:
+  category: categories
+  tag: tags
+  series: series
+
+# outputs tells Hugo the kind of files to be rendered.
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+# markup.highlight has two keys set to make sure that the syntax highlighting
+# in your posts are rendered correctly, so DO NOT edit them.
+markup:
+  highlight:
+    lineNos: true
+    noClasses: false
