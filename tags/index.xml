@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on 爱做梦的馒头</title>
+    <link>https://jayleemantou.github.io/tags/</link>
+    <description>Recent content in Tags on 爱做梦的馒头</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© 馒头 2023</copyright>
+    <atom:link href="https://jayleemantou.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
