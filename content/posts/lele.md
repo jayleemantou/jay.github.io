@@ -5,7 +5,7 @@ draft: false
 tags:
 - 乐乐
 categories:
-- 日常
+- 宠物
 ---
 
 大家好，我是铲屎官馒头。
